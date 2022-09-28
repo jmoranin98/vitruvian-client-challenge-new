@@ -1,29 +1,37 @@
-# Redux Toolkit TypeScript Example
+# NextJS with Redux Toolkit TypeScript
 
-This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
+This is the boilerplate for the ToDo client app for Vitruvian Challenge
 
-The **Redux Toolkit** is a standardized way to write Redux logic (create actions and reducers, setup the store with some default middlewares like redux devtools extension). This example demonstrates each of these features with Next.js
+### Prerequisites
 
-## Deploy your own
+- [Node v16](https://nodejs.org/)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Getting Started
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-redux&project-name=with-redux&repository-name=with-redux)
+Clone this project
 
-## How to use
+## Start Development Server
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-redux with-redux-app
-```
+Install the project dependencies:
 
 ```bash
-yarn create next-app --example with-redux with-redux-app
+npm install
 ```
+
+Start the Client dev server
 
 ```bash
-pnpm create next-app --example with-redux with-redux-app
+npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Work your client sections under the following criteria
+
+*Note*: all sections have to be connected to the project api 'vitruvia-api-challenge'
+
+| Section (Route)               |                               Description |
+| :---------------- | -----------------------------------------: |
+| /        | Show the list of all Task |
+| /task/    | Form to create Task |
+| /task/{id}    | View and edit the Task detail by id |
+
+- in the list each task must have a button that allows you to delete or mark as completed
